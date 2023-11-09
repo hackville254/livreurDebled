@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--     SLIDEBAR -->
+    <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar"
+        type="button"
+        class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+            </path>
+        </svg>
+    </button>
+
+    <aside id="default-sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-white shadow-lg dark:bg-gray-800">
+            <div class="flex items-center justify-center mb-10">
+                <img src="./src/assets/logo_n 1.png" alt="" class="shadow-md rounded-full p-1 hover:animate-spin">
+            </div>
+            <ul class="space-y-2 font-medium">
+                <li>
+                    <a href="./src/index.html"
+                        class="flex items-center p-2 text-white rounded-lg bg-ldb-vert dark:text-white hover:bg-green-400 dark:hover:bg-green-700 group">
+
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M3 13H11V3H3V13ZM3 21H11V15H3V21ZM13 21H21V11H13V21ZM13 3V9H21V3H13Z"
+                                fill="rgba(255,255,255,1)"></path>
+                        </svg>
+                        <span class="ml-3">Tableau de bord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./src/produits.html"
+                        class="flex items-center p-2 text-white rounded-lg bg-ldb-vert dark:text-white hover:bg-green-400 dark:hover:bg-green-700 group">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M8 4H21V6H8V4ZM3 3.5H6V6.5H3V3.5ZM3 10.5H6V13.5H3V10.5ZM3 17.5H6V20.5H3V17.5ZM8 11H21V13H8V11ZM8 18H21V20H8V18Z"
+                                fill="rgba(255,255,255,1)"></path>
+                        </svg>
+
+                        <span class="flex-1 ml-3 whitespace-nowrap">Tout les produits</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./src/produitL.html"
+                        class="flex items-center p-2 text-white rounded-lg bg-ldb-vert dark:text-white hover:bg-green-400 dark:hover:bg-green-700 group">
+                        <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z" />
+                        </svg>
+                        <span class="flex-1 ml-3 whitespace-nowrap">Produits Livrés</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./src/produitE_C.html"
+                        class="flex items-center p-2 text-white rounded-lg bg-ldb-vert dark:text-white hover:bg-green-400 dark:hover:bg-green-700 group">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM13 12V7H11V14H17V12H13Z"
+                                fill="rgba(255,255,255,1)"></path>
+                        </svg>
+
+                        <span class="flex-1 ml-3 whitespace-nowrap">Produits En Route</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/src/ajouter.html"
+                        class="flex items-center p-2 text-white rounded-lg bg-ldb-vert dark:text-white hover:bg-green-400 dark:hover:bg-green-700 group">
+                        <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 18 20">
+                            <path
+                                d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z fill="
+                                rgba(255,255,255,1)" />
+                        </svg>
+                        <span class="flex-1 ml-3 whitespace-nowrap">Ajouter un produit</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-white rounded-lg bg-ldb-vert dark:text-white hover:bg-green-400 dark:hover:bg-green-700 group">
+                        <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-white dark:group-hover:text-white"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
+                        </svg>
+                        <span class="flex-1 ml-3 whitespace-nowrap">Se Deconnecter</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- SLIDEBAR FIN -->
+
+    <!-- CARD -->
+
+    <div class="p-4 sm:ml-64 mb-5 flex w-full">
+
+<div>
+    <div class="p-8 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">TOTAL PRODUIT</h5>
+        <p class="font-normal text-gray-700 dark:text-gray-400">5645</p>
+    </div>
+</div>
+        
+    </div>
+    <!-- CARD FIN -->
+
+
+    <!-- PAYS -->
+
+    <div class="p-4 sm:ml-64">
+
+        <div class="relative overflow-x-auto sm:rounded-lg">
+            <div class="grid grid-cols-1 pixel:grid pixel:grid-cols-2 sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-5 md:gap-5 mx-auto font-poppins"
+                id="flipcardContainer" style="display: flex; flex-wrap: wrap;">
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="/src/js/flowbite.min.js"></script>
+    <script src="/src/js/code.js"></script>
+</body>
+
+</html>
